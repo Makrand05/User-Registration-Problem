@@ -57,4 +57,19 @@ public class Validation {
             System.out.println("Invalid Mobile number ");
         }
     }
+
+    public void validationForPassword(String password) {
+
+        String regex="^[a-zA-Z]{8}$";
+        Pattern pattern=Pattern.compile(regex);
+        Matcher matcher=pattern.matcher(password);
+
+        if(matcher.matches()){
+            System.out.println("Valid Password ");
+        }
+        else {
+            System.out.println("Invalid - Password should more that 8 character ");
+        }
+
+    }
 }
