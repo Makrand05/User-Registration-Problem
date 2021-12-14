@@ -1,8 +1,7 @@
 package com.biz.registration;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 public class RegistrationClass {
     public static void main(String[] args) {
@@ -17,5 +16,9 @@ public class RegistrationClass {
         String lastName= sc.next();
         validation.validateLastName(lastName);
 
+        System.out.println("Enter email address : ");
+        String email= sc.next();
+        validation.validateEmail(email);
+        validation.validateEmail("-mak-r_and.97@gmail.com.in");
     }
 }

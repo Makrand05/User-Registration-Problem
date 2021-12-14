@@ -30,4 +30,18 @@ public class Validation {
             System.out.println("Invalid last Name");
         }
     }
+
+    public void validateEmail(String email) {
+
+        String regex="^[a-z]{3,}?.[a-zA-Z0-9-._+]{1,}@[a-z]{2,}.[a-z]{2,}";
+
+        Pattern pattern=Pattern.compile(regex);
+        Matcher matcher=pattern.matcher(email);
+        if(matcher.matches()){
+            System.out.println("Valid Email Id ");
+        }
+        else {
+            System.out.println("Invalid Email Id ");
+        }
+    }
 }
