@@ -44,4 +44,17 @@ public class Validation {
             System.out.println("Invalid Email Id ");
         }
     }
+
+    public void validateNumber(String number) {
+
+        String regex="^[0-9]{2}\\s?[0-9]{10}$";
+        Pattern pattern=Pattern.compile(regex);
+        Matcher matcher=pattern.matcher(number);
+        if(matcher.matches()){
+            System.out.println("Valid Mobile Number ");
+        }
+        else {
+            System.out.println("Invalid Mobile number ");
+        }
+    }
 }

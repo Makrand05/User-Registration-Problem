@@ -7,7 +7,7 @@ public class RegistrationClass {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         Validation validation=new Validation();
-
+//
         System.out.println("Enter First Name : ");
         String firstName=sc.next();
         validation.validateFirstName(firstName);
@@ -19,6 +19,10 @@ public class RegistrationClass {
         System.out.println("Enter email address : ");
         String email= sc.next();
         validation.validateEmail(email);
-        validation.validateEmail("-mak-r_and.97@gmail.com.in");
+
+        System.out.println("Enter Mobile number : ");
+        String number= sc.next();
+        validation.validateNumber(number);
+
     }
 }
