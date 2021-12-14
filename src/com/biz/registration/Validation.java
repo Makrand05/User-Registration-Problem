@@ -60,7 +60,7 @@ public class Validation {
 
     public void validationForPassword(String password) {
 
-        String regex="^?[a-zA-Z0-9]{8}$";
+        String regex="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[~!@#$%^&*():<>?]).{8,20}";
         Pattern pattern=Pattern.compile(regex);
         Matcher matcher=pattern.matcher(password);
 
