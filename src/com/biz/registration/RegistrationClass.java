@@ -24,7 +24,7 @@ public class RegistrationClass {
 //        String number= sc.next();
 //        validation.validateNumber(number);
         String password="";
-        validation.validationForPassword("maKranda");
+        validation.validationForPassword("maKrjnd5");
 
     }
 }
