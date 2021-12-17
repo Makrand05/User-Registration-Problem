@@ -10,7 +10,7 @@ public class RegistrationClass {
 
         System.out.println("Enter First Name : ");
         String firstName=sc.next();
-        if (validation.validateFirstName(firstName)) {
+        if (validation.validateFirstName(firstName)=="happy") {
             System.out.println("Valid First name");
         } else {
             System.out.println("Invalid First Name");
@@ -18,7 +18,7 @@ public class RegistrationClass {
 
         System.out.println("Enter last name : ");
         String lastName= sc.next();
-        if (validation.validateLastName(lastName)) {
+        if (validation.validateLastName(lastName)=="happy") {
             System.out.println("Valid last name");
         } else {
             System.out.println("Invalid last Name");
@@ -26,7 +26,7 @@ public class RegistrationClass {
 
         System.out.println("Enter email address : ");
         String email= sc.next();
-        if (validation.validateEmail(email)) {
+        if (validation.validateEmail(email)=="happy") {
             System.out.println("Valid Email Id ");
         } else {
             System.out.println("Invalid Email Id ");
@@ -34,19 +34,18 @@ public class RegistrationClass {
 
         System.out.println("Enter Mobile number : ");
         String number=  sc.next();
-        if ( validation.validateNumber(number)) {
+        if ( validation.validateNumber(number)=="happy") {
             System.out.println("Valid Mobile Number ");
         } else {
             System.out.println("Invalid Mobile number ");
         }
         System.out.println("Enter Password  : ");
         String password= sc.next();
-        if (  validation.validationForPassword(password)) {
+        if (  validation.validationForPassword(password)=="happy") {
             System.out.println("Valid Password ");
         } else {
             System.out.println("Invalid - Password ");
         }
-
 
     }
 }
