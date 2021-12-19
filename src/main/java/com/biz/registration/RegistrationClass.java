@@ -1,19 +1,21 @@
 package com.biz.registration;
 
+import com.biz.exception.UserRegistrationException;
+
 import java.util.Scanner;
 
 
 public class RegistrationClass {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UserRegistrationException {
         Scanner sc= new Scanner(System.in);
         Validation validation=new Validation();
 
         System.out.println("Enter First Name : ");
         String firstName=sc.next();
         if (validation.validateFirstName(firstName)=="happy") {
-            System.out.println("Valid First name");
-        } else {
             System.out.println("Invalid First Name");
+        } else {
+            System.out.println("Valid First name");
         }
 
         System.out.println("Enter last name : ");

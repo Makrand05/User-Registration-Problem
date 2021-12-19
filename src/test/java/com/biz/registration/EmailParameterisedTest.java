@@ -1,6 +1,7 @@
 package com.biz.registration;
 
 
+import com.biz.exception.UserRegistrationException;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,9 +33,14 @@ public class EmailParameterisedTest {
     @Test
     public void givenEmailId_whenEmailIdCorrect_shouldPassAllTestCase() {
         Validation validation = new Validation();
-        String actualResult=validation.validateEmail(this.emailId);
-        String expectedResult="happy";
-        Assert.assertEquals(expectedResult,actualResult);
-    }
+        try {
+            String actualResult = validation.validateEmail(this.emailId);
+            String expectedResult = "happy";
+            Assert.assertEquals(expectedResult, actualResult);
+        }
+        catch (UserRegistrationException e){
+            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.FIRST_NAME_EXCEPTION);
+        }
+        }
 
 }

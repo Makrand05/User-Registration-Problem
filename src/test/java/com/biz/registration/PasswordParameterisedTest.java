@@ -1,5 +1,6 @@
 package com.biz.registration;
 
+import com.biz.exception.UserRegistrationException;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -30,8 +31,15 @@ public class PasswordParameterisedTest {
     @Test
     public void givenPasswords_whenPasswordCorrect_shouldPassAllTestCase() {
         Validation validation = new Validation();
-        String actualResult=(validation.validationForPassword(this.password));
-        String expectedResult="happy";
-        Assert.assertEquals(expectedResult,actualResult);
+        try {
+            String actualResult = (validation.validationForPassword(this.password));
+
+            String expectedResult = "happy";
+            Assert.assertEquals(expectedResult, actualResult);
+        }
+        catch (UserRegistrationException e)
+        {
+            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.PASSWORD_EXCEPTION);
+        }
     }
 }
