@@ -19,6 +19,8 @@ target/
 *.iml
 *.ipr
 *.out
+*.idea
+*.target
 
 ### NetBeans ###
 /nbproject/private/
