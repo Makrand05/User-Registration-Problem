@@ -12,7 +12,7 @@ public class RegistrationClass {
 
         System.out.println("Enter First Name : ");
         String firstName=sc.next();
-        if (validation.validateFirstName(firstName)=="happy") {
+        if (validation.validateFirstName.iValidation(firstName)=="happy") {
             System.out.println("Invalid First Name");
         } else {
             System.out.println("Valid First name");

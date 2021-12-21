@@ -18,7 +18,7 @@ public class ValidationTest {
     public void givenFirstNameCase1_whenFirstName_shouldReturnValid() {
         String actualResult;
         try {
-            actualResult = validation.validateFirstName("Makrand");
+            actualResult = validation.validateFirstName.iValidation("Makrand");
             String expectedResult = "happy";
             System.out.println(actualResult);
             Assert.assertEquals(expectedResult, actualResult);
@@ -31,7 +31,7 @@ public class ValidationTest {
     public void givenFirstNameCase2_whenFirstName_shouldReturnInvalid() {
         String actualResult;
         try {
-            actualResult = validation.validateFirstName("makrand");
+            actualResult = validation.validateFirstName.iValidation("makrand");
             String expectedResult = "happy";
             System.out.println(actualResult);
             Assert.assertEquals(expectedResult, actualResult);
@@ -45,7 +45,7 @@ public class ValidationTest {
     public void givenFirstNameCase3_whenFirstName_shouldReturnInvalid() {
         String actualResult;
         try {
-            actualResult = validation.validateFirstName("Makrand@");
+            actualResult = validation.validateFirstName.iValidation("Makrand@");
             String expectedResult = "happy";
             System.out.println(actualResult);
             Assert.assertEquals(expectedResult, actualResult);
@@ -58,7 +58,7 @@ public class ValidationTest {
     public void givenFirstNameCase4_whenFirstName_shouldReturnInvalid() {
         String actualResult;
         try {
-            actualResult = validation.validateFirstName("Makrand1");
+            actualResult = validation.validateFirstName.iValidation("Makrand1");
             String expectedResult = "happy";
             System.out.println(actualResult);
             Assert.assertEquals(expectedResult, actualResult);
@@ -76,7 +76,7 @@ public class ValidationTest {
             System.out.println(actualResult);
             Assert.assertEquals(expectedResult, actualResult);
         } catch (UserRegistrationException e) {
-            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.FIRST_NAME_EXCEPTION);
+            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.LAST_NAME_EXCEPTION);
         }
     }
 
@@ -88,7 +88,7 @@ public class ValidationTest {
             System.out.println(actualResult);
             Assert.assertEquals(expectedResult, actualResult);
         } catch (UserRegistrationException e) {
-            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.FIRST_NAME_EXCEPTION);
+            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.LAST_NAME_EXCEPTION);
         }
     }
 
@@ -100,7 +100,7 @@ public class ValidationTest {
             System.out.println(actualResult);
             Assert.assertEquals(expectedResult, actualResult);
         } catch (UserRegistrationException e) {
-            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.FIRST_NAME_EXCEPTION);
+            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.LAST_NAME_EXCEPTION);
         }
     }
 
@@ -112,7 +112,7 @@ public class ValidationTest {
             System.out.println(actualResult);
             Assert.assertEquals(expectedResult, actualResult);
         } catch (UserRegistrationException e) {
-            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.FIRST_NAME_EXCEPTION);
+            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.LAST_NAME_EXCEPTION);
         }
     }
 
@@ -126,7 +126,7 @@ public class ValidationTest {
             System.out.println(actualResult);
             Assert.assertEquals(expectedResult, actualResult);
         } catch (UserRegistrationException e) {
-            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.FIRST_NAME_EXCEPTION);
+            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.PHONE_NUMBER_NAME_EXCEPTION);
         }
     }
 
@@ -138,7 +138,7 @@ public class ValidationTest {
             System.out.println(actualResult);
             Assert.assertEquals(expectedResult, actualResult);
         } catch (UserRegistrationException e) {
-            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.FIRST_NAME_EXCEPTION);
+            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.PHONE_NUMBER_NAME_EXCEPTION);
         }
     }
 
@@ -150,7 +150,7 @@ public class ValidationTest {
             System.out.println(actualResult);
             Assert.assertEquals(expectedResult, actualResult);
         } catch (UserRegistrationException e) {
-            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.FIRST_NAME_EXCEPTION);
+            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.PHONE_NUMBER_NAME_EXCEPTION);
         }
     }
 
@@ -162,7 +162,7 @@ public class ValidationTest {
             System.out.println(actualResult);
             Assert.assertEquals(expectedResult, actualResult);
         } catch (UserRegistrationException e) {
-            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.FIRST_NAME_EXCEPTION);
+            System.out.println(e.message + " - " + UserRegistrationException.ExceptionType.PHONE_NUMBER_NAME_EXCEPTION);
         }
     }
 }
